@@ -18,7 +18,7 @@ if not GEMINI_API_KEY:
     raise ValueError("⚠️ GOOGLE_API_KEY not found. Set it in environment variables.")
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.0-pro")  # ✅ stable & supported
+model = genai.GenerativeModel("gemini-1.0")  # ✅ stable & supported
 
 # ------------------------------
 # Routes
